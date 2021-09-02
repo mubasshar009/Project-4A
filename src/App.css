@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+html,body {
+  background-color: #000;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80% ;
+  background-position-x:50% ;
+}
+#alice-tot {
+  position: relative;
+  left: 50%;
+  margin-top: 30%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#alice-skelton {
+  width: 17%;
+  position: absolute;
+  left: 45%;
+  bottom:-400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#hair { 
+  z-index: -1;
+  width: 17%;
+  position: absolute;
+  left: 590px;
+  bottom: 60px;  
+   
+}
+#table-ad {
+  z-index: auto;
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+}
+#drinkMe {
+  z-index: 1;
+  position: absolute;
+  bottom: 8%;
+  right: 18%;
+}
+#bottle_b {
+
+  position: absolute;
+  bottom: 3%;
+  right: 16%;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.eat_me {
+  overflow: hidden;
+  cursor: pointer;
+  height: 250px;
+  width: 400px;
+  position: absolute;
+  bottom: 6%;
+  left: 18%;
+}
+.eatMe::before {
+  content: " ";
+  display: block;
+  padding-top: 74.83%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#eatMe{
+  position: absolute;
+  left: 5%;
+  bottom: 29%;
+  
 }
