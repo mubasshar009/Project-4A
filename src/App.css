@@ -7,25 +7,26 @@ html,body {
   background-position-x:50% ;
 }
 #alice-tot {
+  cursor: pointer;
   position: relative;
   left: 50%;
-  margin-top: 30%;
+  margin-top: 35%;
 
 }
 
 #alice-skelton {
-  width: 17%;
+  width: 7%;
   position: absolute;
   left: 45%;
-  bottom:-400px;
+  bottom:-90px;
 }
 
 #hair { 
   z-index: -1;
-  width: 17%;
+  width: 7%;
   position: absolute;
-  left: 590px;
-  bottom: 60px;  
+  left: 600px;
+  bottom: 80px;  
    
 }
 #table-ad {
@@ -37,23 +38,31 @@ html,body {
   bottom: 0%;
 }
 #drinkMe {
+  cursor: pointer;
   z-index: 1;
   position: absolute;
   bottom: 8%;
   right: 18%;
 }
 #bottle_b {
-
+  z-index: -1;
   position: absolute;
   bottom: 3%;
   right: 16%;
     
 }
-
+#liquid {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/drink-me_liquid_small.png) no-repeat 100% 100%/100% auto;
+  position: absolute;
+  bottom: 9%; right: 18%;
+  height: 50%; width: 9%;
+  opacity: .9;
+  z-index: 0;
+}
 .eat_me {
   overflow: hidden;
   cursor: pointer;
-  height: 250px;
+  height: 230px;
   width: 400px;
   position: absolute;
   bottom: 6%;
@@ -66,8 +75,9 @@ html,body {
 }
 
 #eatMe{
-  position: absolute;
+
+  position: relative;
   left: 5%;
-  bottom: 29%;
+  bottom: 1%;
   
 }
